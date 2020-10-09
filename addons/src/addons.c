@@ -737,7 +737,12 @@ void geany_load_module(GeanyPlugin *plugin)
 	plugin->funcs->help = plugin_addons_help;
 	plugin->funcs->configure = plugin_addons_configure;
 	plugin->funcs->callbacks = plugin_addons_callbacks;
-
+		
+// 	plugin->funcs->init = plugin_addons_init;
+// 	plugin->funcs->cleanup = plugin_addons_cleanup;
+// 	plugin->funcs->help = plugin_addons_help;
+// 	plugin->funcs->configure = plugin_addons_configure;
+// 	plugin->funcs->callbacks = plugin_addons_callbacks;
 	/* Register! */
 	GEANY_PLUGIN_REGISTER(plugin, 226);
 }
